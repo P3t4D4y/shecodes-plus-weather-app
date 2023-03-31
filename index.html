@@ -11,11 +11,78 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/fa04926dfd.js"
+      crossorigin="anonymous"></script>
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <h1>Hello World </h1>
+      <div class="weatherApp">
+        <form id="enter-your-city">
+          <div class="row search">
+            <div class="col-9">
+              <input
+                type="text"
+                placeholder="Enter your city"
+                class="form-control enterYourCity"
+                autofocus="on"
+                id="search-text-input" />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+          </div>
+        </form>
+        <div class="col-3">
+          <button
+            class="btn btn-primary currentLocationButton"
+            id="current-location-button">
+            Current Location
+          </button>
+        </div>
+        <div class="todayWeatherInfo">
+          <div class="row">
+            <div class="col-6">
+              <i class="fa-solid fa-location-dot"></i>
+              London
+              <h2>United Kingdom</h2>
+              <h4>Saturday 11th February 2023</h4>
+            </div>
+            <div class="col-6">
+              <h1>15 °C</h1>
+              <button class="degreesButtons" id="fahrenheit-button">
+                <a href="#" class="link">°F</a>
+              </button>
+              <button class="degreesButtons" id="celsius-button">
+                <a href="#" class="link">°C</a>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <ul>
+                <li> Wind speed: </li>
+                <li> Humidity: </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li> Clear skies </li>
+                <li> 18 / 14 ° </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <small>
+        <a
+          href="https://github.com/P3t4D4y/shecodes-plus-weather-app"
+          target="_blank"
+          >Open source code</a
+        >
+        by Peta Day
+      </small>
     </div>
     <script src="src/index.js"></script>
   </body>
