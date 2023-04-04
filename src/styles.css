@@ -35,7 +35,11 @@
   margin: 15px 0 0 35px;
 }
 
-.todayTemp,
+.today {
+  text-align: right;
+}
+
+.tempNow,
 .todayWeatherImage {
   font-size: 40px;
   margin: 20px 10px 0 0;
