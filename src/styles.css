@@ -1,1 +1,111 @@
+.container {
+  font-family: "Roboto", sans-serif;
+}
 
+.weatherApp {
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.citySearch {
+  text-align: center;
+}
+
+.currentLocationButton {
+  font-size: 10px;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.cityLocation {
+  margin: 20px 0 0;
+}
+
+.countryLocation {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 0 0 35px;
+}
+
+.date {
+  font-size: 15px;
+  margin: 15px 0 0 35px;
+}
+
+.todayTemp,
+.todayWeatherImage {
+  font-size: 40px;
+  margin: 20px 10px 0 0;
+  text-align: right;
+}
+
+.todayWeatherImage {
+  display: inline;
+}
+
+.degreesButtons {
+  margin: 5px 20px 0 0;
+}
+
+.celsiusButton,
+.fahrenheitButton {
+  background-color: #fff;
+  border: #fff;
+  float: right;
+  margin: 0 2.5px;
+  padding: 2.5px 5px;
+}
+
+.link {
+  color: #b0b1b2;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.todayWindSpeedAndHumidity {
+  margin: 20px 0;
+}
+
+.windSpeed,
+.humidity {
+  color: #b0b1b2;
+  font-weight: 500;
+}
+
+.todayWindSpeed,
+.todayHumidity {
+  color: #efcc00;
+  font-weight: 500;
+}
+
+.todayDescription {
+  color: #b0b1b2;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 500;
+  margin: 0 20px;
+  text-align: right;
+}
+
+.todayTemp {
+  font-size: 25px;
+  margin: 0 20px;
+  text-align: right;
+}
+
+.todayTempHigh {
+  color: #efcc00;
+  font-weight: 500;
+}
+
+.todayTempLow {
+  color: #b0b1b2;
+
+  font-weight: 300;
+}

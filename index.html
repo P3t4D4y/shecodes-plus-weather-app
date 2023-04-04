@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,62 +13,92 @@
     <script
       src="https://kit.fontawesome.com/fa04926dfd.js"
       crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
       <div class="weatherApp">
         <form id="enter-your-city">
-          <div class="row search">
+          <div class="row citySearch">
             <div class="col-9">
               <input
                 type="text"
-                placeholder="Enter your city"
+                placeholder="Enter a city"
                 class="form-control enterYourCity"
                 autofocus="on"
                 id="search-text-input" />
             </div>
             <div class="col-3">
-              <input type="submit" value="Search" class="btn btn-primary" />
+              <input
+                type="submit"
+                value="Search"
+                class="btn btn-primary w-100" />
             </div>
           </div>
         </form>
-        <div class="col-3">
+        <div class="col">
           <button
-            class="btn btn-primary currentLocationButton"
+            class="btn btn-light currentLocationButton"
             id="current-location-button">
             Current Location
           </button>
         </div>
+
         <div class="todayWeatherInfo">
           <div class="row">
             <div class="col-6">
-              <i class="fa-solid fa-location-dot"></i>
-              London
-              <h2>United Kingdom</h2>
-              <h4>Saturday 11th February 2023</h4>
+              <h1 class="cityLocation" id="city-location">
+                <i class="fa-solid fa-location-dot"></i> London
+              </h1>
+              <h2 class="countryLocation" id="country-location">
+                United Kingdom
+              </h2>
+              <h4 class="date" id="date"> Saturday 11th February 2023 </h4>
             </div>
             <div class="col-6">
-              <h1>15 °C</h1>
-              <button class="degreesButtons" id="fahrenheit-button">
-                <a href="#" class="link">°F</a>
-              </button>
-              <button class="degreesButtons" id="celsius-button">
-                <a href="#" class="link">°C</a>
-              </button>
+              <h1 class="todayTemp">
+                15 °C
+                <div class="todayWeatherImage">
+                  <img src="images/sunny foggy.png" width="60px" />
+                </div>
+              </h1>
+              <div class="degreesButtons">
+                <button
+                  class="btn btn-light fahrenheitButton"
+                  id="fahrenheit-button">
+                  <a href="#" class="link">°F</a>
+                </button>
+                <button class="btn btn-light celsiusButton" id="celsius-button">
+                  <a href="#" class="link">°C</a>
+                </button>
+              </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-6 todayWindSpeedAndHumidity">
               <ul>
-                <li> Wind speed: </li>
-                <li> Humidity: </li>
+                <li>
+                  <span class="windSpeed">Wind speed: </span>
+                  <span class="todayWindSpeed"> 14 km/h </span>
+                </li>
+                <li>
+                  <span class="humidity">Humidity: </span>
+                  <span class="todayHumidity"> 67% </span>
+                </li>
               </ul>
             </div>
             <div class="col-6">
               <ul>
-                <li> Clear skies </li>
-                <li> 18 / 14 ° </li>
+                <li class="todayDescription"> Clear skies </li>
+                <li class="todayTemp">
+                  <span class="todayTempHigh">18° </span>
+                  <span class="todayTempLow">| 14°</span>
+                </li>
               </ul>
             </div>
           </div>
