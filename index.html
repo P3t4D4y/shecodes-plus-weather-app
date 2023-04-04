@@ -18,6 +18,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -53,7 +54,8 @@
           <div class="row">
             <div class="col-6">
               <h1 class="cityLocation" id="city-location">
-                <i class="fa-solid fa-location-dot"></i> London
+                <i class="fa-solid fa-location-dot"> </i>
+                <span id="city"> </span>
               </h1>
               <h2 class="countryLocation" id="country-location">
                 United Kingdom
@@ -62,7 +64,8 @@
             </div>
             <div class="col-6">
               <div class="today">
-                <span class="tempNow"> 15 °C </span>
+                <span class="tempNow" id="temp-now"> 15</span
+                ><span class="units"> °C </span>
                 <span class="todayWeatherImage">
                   <img src="images/sunny foggy.png" width="60px" />
                 </span>
