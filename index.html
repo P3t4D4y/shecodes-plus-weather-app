@@ -53,7 +53,7 @@
 
         <div class="todayWeatherInfo">
           <div class="row">
-            <div class="col-7">
+            <div class="col-6">
               <h1 class="cityLocation" id="city-location">
                 <i class="fa-solid fa-location-dot"> </i>
                 <span id="city"> </span>
@@ -63,10 +63,10 @@
               </h2>
               <h4 class="date" id="date"> Saturday 11th February 2023 </h4>
             </div>
-            <div class="col-5">
+            <div class="col-6">
               <div class="today">
                 <span class="tempNow" id="temp-now"> 15</span>
-                <span class="units"> °C </span>
+                <span class="units" id="units"> °C </span>
                 <span class="todayWeatherImage">
                   <img
                     src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
@@ -76,13 +76,11 @@
                 </span>
               </div>
               <div class="degreesButtons">
-                <button
-                  class="btn btn-light fahrenheitButton"
-                  id="fahrenheit-button">
-                  <a href="#" class="link">°F</a>
+                <button class="btn btn-light fahrenheitButton">
+                  <a href="#" class="link" id="fahrenheit-link">°F</a>
                 </button>
-                <button class="btn btn-light celsiusButton" id="celsius-button">
-                  <a href="#" class="link">°C</a>
+                <button class="btn btn-light celsiusButton">
+                  <a href="#" class="link" id="celsius-link">°C</a>
                 </button>
               </div>
             </div>
@@ -108,8 +106,8 @@
                   Clear skies
                 </li>
                 <li class="todayTemp">
-                  <span class="todayTempHigh">18° </span>
-                  <span class="todayTempLow">| 14°</span>
+                  <span class="feelsLike">Feels like: </span>
+                  <span class="feelsLikeTemp">18° </span>
                 </li>
               </ul>
             </div>
