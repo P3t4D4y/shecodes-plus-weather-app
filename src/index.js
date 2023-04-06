@@ -47,6 +47,7 @@ function displayTemperature(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+  let feelsLikeElement = document.querySelector("#feels-like");
 
   celsiusTemperature = response.data.temperature.current;
 
@@ -62,6 +63,7 @@ function displayTemperature(response) {
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   iconElement.setAttribute("alt", response.data.condition.description);
+  feelsLikeElement.innerHTML = Math.round(response.data.temperature.feels_like);
 }
 
 function search(city) {
