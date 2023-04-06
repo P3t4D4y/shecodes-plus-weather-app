@@ -38,7 +38,6 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  console.log(response);
   let countryElement = document.querySelector("#country-location");
   let temperatureElement = document.querySelector("#temp-now");
   let cityElement = document.querySelector("#city");

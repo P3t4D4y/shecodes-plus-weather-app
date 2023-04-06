@@ -2,10 +2,15 @@
   font-family: "Roboto", sans-serif;
 }
 
+.pageContainer {
+  margin: 30px auto;
+  max-width: 600px;
+}
+
 .weatherApp {
   border: 1px solid #dadde1;
   border-radius: 10px;
-  margin: 30px auto;
+  margin: 10px auto;
   max-width: 600px;
   padding: 20px;
 }
@@ -121,6 +126,30 @@ ul {
 }
 
 .feelsLike {
+  color: #b0b1b2;
+  font-weight: 300;
+}
+
+.weather-forecast {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.weatherForecastDay {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.weatherForecastTemperature {
+  font-size: 16px;
+}
+
+.temperatureHigh {
+  color: #efcc00;
+  font-weight: 500;
+}
+
+.temperatureLow {
   color: #b0b1b2;
   font-weight: 300;
 }
